@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clPTEFCDF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="400dp"
+    tools:context="com.crystal.bazarposmobile.ui.dialogfragmen.PagoTEFContinguenciaDialogFragment">
+
+
+    <Spinner
+        android:id="@+id/spinnerPTEFCDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloDeudaPTEFCDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/neto_pagar_medios"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPTEFCDF" />
+
+    <TextView
+        android:id="@+id/tvDeudaPTEFCDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/cero_0"
+        android:textColor="@color/colorSecudary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloDeudaPTEFCDF"
+        app:layout_constraintStart_toEndOf="@+id/tvTituloDeudaPTEFCDF"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloDeudaPTEFCDF" />
+
+    <ProgressBar
+        android:id="@+id/pbPTEFCDF"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etImportePTEFCDF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/importe"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCalcularPTEFCDF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloDeudaPTEFCDF" />
+
+    <Button
+        android:id="@+id/btnCalcularPTEFCDF"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/sigigual"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etImportePTEFCDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etImportePTEFCDF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

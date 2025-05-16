@@ -1,0 +1,119 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clIGDF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.bazarposmobile.ui.dialogfragmen.ImporteGripDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline80dpIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <TextView
+        android:id="@+id/tvTituloCodigoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/codigo_importe"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCodigoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloCodigoIGDF"
+        app:layout_constraintStart_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloCodigoIGDF"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTituloTipoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/tipo_"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCodigoIGDF" />
+
+    <TextView
+        android:id="@+id/tvTipoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloTipoIGDF"
+        app:layout_constraintStart_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloTipoIGDF" />
+
+    <TextView
+        android:id="@+id/tvTituloMontoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/monto_importe"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloTipoIGDF" />
+
+    <TextView
+        android:id="@+id/tvMontoIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloMontoIGDF"
+        app:layout_constraintStart_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloMontoIGDF" />
+
+    <TextView
+        android:id="@+id/tvTituloDivisaIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/moneda_importe"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloMontoIGDF" />
+
+    <TextView
+        android:id="@+id/tvDivisaIGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloDivisaIGDF"
+        app:layout_constraintStart_toStartOf="@+id/guideline80dpIGDF"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloDivisaIGDF"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,578 @@
+<resources>
+    <!-- TODO: Titulos de Activity-->
+    <string name="version_apk">V.2.5.6.11</string>
+    <string name="app_name">Bazar POS Mobile Crystal</string>
+    <string name="titulo">Bazar POS Mobile</string>
+    <string name="titulo_config">Configurar Caja</string>
+    <string name="titulo_clente">Consultar Clientes</string>
+    <string name="titulo_cierre_datafono">Cierre TEF</string>
+    <string name="titulo_utltrans_datafono">Última Transacción</string>
+    <string name="titulo_anular_datafono">Anular Transacción</string>
+    <string name="titulo_bono_regalo_datafono">Bono Regalo</string>
+    <string name="titulo_medios_pagos">Medios de Pago</string>
+    <string name="titulo_impresion_prueba">Prueba de Impresión</string>
+    <string name="titulo_detalle_descuento">Detalles de los descuentos</string>
+    <string name="titulo_devolucion_con_informacion">Devolución con información</string>
+    <string name="titulo_test_comunicacion_datafono">Prueba de comunicación TEF</string>
+    <string name="titulo_mercado_pago">Mercado Pago</string>
+    <string name="titulo_bono_sodexo">Bono Sodexo</string>
+    <string name="titulo_productos_bazar">Productos del Bazar</string>
+    <string name="titulo_cierre_contingencia">Cierre TEF Contingencia</string>
+    <string name="titulo_re_impresion_tef">Re-Imprimir Comprobante TEF</string>
+    <string name="Titulo_tipo_datafono">Dispositivo</string>
+    <string name="tipo_datafono_ej">SmartPOS N6</string>
+    <string name="titulo_estado_dispositivo">Estado</string>
+    <string name="dispositivo_activo">Activo</string>
+    <string name="dispositivo_inactivo">Inactivo</string>
+    <string name="titulo_select_tipo_dispositivo">Seleccione el proveedor y tipo de dispositivo a configurar</string>
+    <string name="credibanco">CredibanCo</string>
+    <string name="Redeban">Redeban</string>
+    <string name="titulo_compra_en_datafono_n6">Compra datafono %1$s</string>
+    <string name="progress_seguir_pasos_datafono_n6">Oprima el botón (Venta) del datáfono y sigue las instrucciones…</string>
+    <string name="progress_seguir_pasos_datafono_n6_anulacion">En el menú desplegable del datafono (Parte superior izquierda), seleccione la opción (Funciones Principales) luego (Anulación) y sigue las instrucciones…</string>
+    <string name="progress_seguir_pasos_datafono_n6_comprobar_pago">En caso de que el pago no se haya realizado, Oprima el botón (Venta) del datáfono y sigue las instrucciones…</string>
+    <string name="et_usuario_datafono">Usuario datáfono</string>
+    <string name="et_pass_datafono">Contraseña datáfono</string>
+    <string name="codigo_unico_datafono">Código único comercio</string>
+    <string name="et_time_datafono_espera">TimeOut espera datáfono (Mayor o igual a 3m)</string>
+    <string name="codigo_datafono">Código datáfono</string>
+    <string name="tv_msj_error_conexion_n6">Problemas con la conexión a internet, si la transacción sigue en proceso valide el pago con el botón (Comprobar Pago).</string>
+    <string name="tv_msj_error_conexion_n6_anulacion">Problemas con la conexión a internet, si la anulación sigue en proceso puede validarla con el botón (Comprobar Anulación).</string>
+    <string name="comprobar_pago">Comprobar pago</string>
+    <string name="progress_cargando">Cargando…</string>
+    <string name="titulo_configure_el_datafono">Configuración del datafono %1$s</string>
+    <string name="trasacion_pendiente">Transación en estado PENDIENTE</string>
+    <string name="msj_alerta_cancelar_tef">Para cancelar la transación debes darle al botón (Venta) del datafono y luego al botón (Cambiar).</string>
+    <string name="progress_seguir_pasos_datafono_n6_prueba">Oprima el botón (Venta) del datáfono y sigue las instrucciones (%1$s)…</string>
+    <string name="aprobacion">Aprobación:</string>
+    <string name="configuraciones">Configuración</string>
+    <string name="imprimir_info">Imprimir</string>
+    <string name="progress_consultando_ultima_tef">Consultando…</string>
+    <string name="sin_registro">Sin registro</string>
+    <string name="texto_anulacion">ANULACION</string>
+    <string name="texto_anulacion_2">Seleccione la transacción TEF que desea anular.</string>
+    <string name="ups_algo_mal">¡Ups! Algo salió mal</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="ups_algo_mal_msj_actualizar">Lamentablemente, hemos encontrado un problema en la actualización de la transacción. Cod (%1$s)</string>
+    <string name="la_transaccion_ya_anulada">Esta transacción ya se encuentra anulada.</string>
+    <string name="progress_anulando">Anulando…</string>
+    <string name="comprobar_anulacion">Comprobar anulación</string>
+    <string name="positivo_anulacion">Anular</string>
+    <string name="negativo_anulacion">Más información</string>
+    <string name="seleccione_opcion_tef">Transacción tef (%1$s)</string>
+    <string name="texto_seleccione_opcion_tef">¿Desea anular la transacción tef o ver mas información?</string>
+    <string name="progress_actualizando_tef">Actualizando anulación…</string>
+    <string name="msj_alerta_cancelar_tef_anulacion">Para cancelar la anulación debes ir al menú desplegable del datafono (Parte superior izquierda), seleccione la opción (Funciones Principales) luego (Anulación) y oprime el botón (Cambiar)…</string>
+    <string name="listo">Listo</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="sobreescribir_proceso_titulo">SOBRESCRIBIR</string>
+    <string name="msj_alerta_cancelar_tef_3">Para sobrescribir la transacción, primero presiona el botón (Venta) en el datáfono, luego selecciona (Cambiar). Una vez completado el proceso, pulsa el botón (Listo).</string>
+    <string name="msj_alerta_cancelar_tef_2">Aún tienes una transacción pendiente por un valor de %1$s. ¿Te gustaría continuar con ella o cambiarla por %2$s?</string>
+    <string name="msj_alerta_cancelar_tef_4">Aún tienes una transacción pendiente por un valor de %1$s. ¿Te gustaría continuar con ella o cambiarla?</string>
+
+    <!-- TODO: Lottie-->
+    <string name="animacion_escanear_cedula">license_scanning.json</string>
+    <string name="animacion_splash_inicio">splash_inicio.lottie</string>
+    <string name="animacion_splash_inicio2">splash_inicio2.lottie</string>
+    <string name="animacion_inicio_sesion">inicio_session.json</string>
+    <string name="animacion_compra_realizada">animation_compra1.json</string>
+    <string name="animacion_here">animation_here.json</string>
+    <string name="animacion_buscar">animation_buscar.json</string>
+    <string name="animacion_info">animation_information.lottie</string>
+    <string name="animacion_flecha_derecha_azul">animation_flecha_derecha_azul.json</string>
+    <string name="animacion_cara_enojada">animation_cara_enojada.json</string>
+    <string name="animacion_cara_neutral">animation_cara_neutral.json</string>
+    <string name="animacion_cara_feliz">animation_cara_feliz.json</string>
+    <string name="animacion_carga_1">animation_carga_1.json</string>
+
+    <!-- TODO: Generales-->
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="entiendo">Entiendo</string>
+    <string name="volver">Volver</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="acepto">Acepto</string>
+    <string name="ok">OK</string>
+    <string name="resultado">Resultado</string>
+    <string name="sin_resultado">Sin resultado</string>
+    <string name="n_a">N/A</string>
+    <string name="cpcl">CPCL</string>
+    <string name="esc_pos">ESC/POS</string>
+    <string name="rfid">RFID</string>
+    <string name="buscar">Buscar</string>
+    <string name="inactivo">Inactivo</string>
+    <string name="error">Error</string>
+    <string name="alerta">Alerta</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="imprimir">Imprimir</string>
+    <string name="cero_0">0</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="_ir">IR</string>
+    <string name="desconectando">Desconectando</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="autorizar">Autorizar</string>
+    <string name="atras">Atras</string>
+    <string name="autorizacion">Autorización</string>
+    <string name="usurio_requerido">Usuario requerido</string>
+    <string name="codigo_requerido">Código requerido</string>
+    <string name="pass_requerido">La contraseña es requerida</string>
+    <string name="cajas">Cajas</string>
+    <string name="caja">caja</string>
+    <string name="informacion">Información</string>
+    <string name="tienda">tienda</string>
+    <string name="salir">Salir</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="tiendas">Tiendas</string>
+    <string name="vendedores">Vendedores</string>
+    <string name="descuentos">Descuentos</string>
+    <string name="importe">Importe</string>
+    <string name="deuda">Deuda</string>
+    <string name="calcular">Calcular</string>
+    <string name="anadir">Añadir</string>
+    <string name="mas">+</string>
+    <string name="entendido">Entendido</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="mostrar_todos">Mostrar Todos</string>
+    <string name="pago">Pago</string>
+    <string name="monto">Monto</string>
+    <string name="enviar">Enviar</string>
+    <string name="anular">Anular</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="leer">Leer</string>
+    <string name="devolucion">Devolución</string>
+    <string name="sigigual">=</string>
+    <string name="ninguno">Ninguno</string>
+    <string name="cajero">Cajero</string>
+    <string name="continuar">Continuar</string>
+    <string name="guardar">Guardar</string>
+    <string name="deuda_">Deuda:</string>
+    <string name="total_">Total:</string>
+    <string name="tipo_">Tipo:</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="prueba">Prueba</string>
+    <string name="tef">TEF</string>
+    <string name="factura">Factura</string>
+
+    <!-- TODO: SweetAlert - XML CONFIGURACIÓN -->
+    <string name="error_crear_directorio">Hubo un problema creando el directorio para guardar el XML configuración, comuniquese con el administrador.</string>
+    <string name="mensaje_guardar_xml">No se puede guardar el archivo XML porque el directorio no se creó correctamente, comuniquese con el administrador.</string>
+    <string name="mensaje_cargar_xml">No se puede cargar el archivo, no hay ninguna configuración previamente guardada.</string>
+    <string name="guardado_exitoso_xml">La configuración del dispositivo se guardo correctamente.</string>
+    <string name="carga_exitosa_xml">Se cargo la ultima configuración del dispositivo correctamente.</string>
+    <string name="titulo_guardar_xml_ref">Guardar Configuración</string>
+    <string name="mensaje_guardar_xml_ref">¿Estas seguro de guardar la configuración del dispositivo?, Se cambiara por la anterior.</string>
+    <string name="titulo_recomendacion_carga">Información</string>
+    <string name="mensaje_recomendacion_carga">Se estan cargado los parámetros de impresión y pago TEF, POS Mobile - Bazar se cerrará para terminar de cargar esta configuración, vuelve a iniciar.</string>
+
+    <!-- TODO: AutorizacionSimpleDialogFragment -->
+    <string name="error_autorizacion_">Error de Autorización:</string>
+    <string name="consultando_autorizacion">Autorizando…</string>
+
+    <!-- TODO: BancolombiaQrActivity-->
+    <string name="title_activity_bancolombia_qr">Bancolombia QR 3.0</string>
+    <string name="consultar_qr">Generar QR</string>
+    <string name="dueda_supera_cupo_disponible">La deuda supera el cupo disponible</string>
+    <string name="consultar_pago">Validar Pago</string>
+    <string name="salir_sin_pago_qrbancolombia">Qr en proceso,no se podrá validar este cobro.</string>
+    <string name="cierre_qr_bancolombia">¡Atención!</string>
+    <string name="pago_no_encontrado_qr_bancolombia">No se ha encontrado el pago.</string>
+    <string name="error_crear_qr">Ha ocurrido un error con el SVG del QR, Comuniquese con el administrador.</string>
+    <string name="error_conexion_bancolombia">Error de conexión con el servicio web de bancolombia.</string>
+    <string name="nombre_cliente_qr_generica">Genérico</string>
+    <string name="cedula_cliente_qr_generica">CC</string>
+    <string name="numero_documento_qr_generica">1234</string>
+    <string name="cedula_ciudadania_letra">CC</string>
+    <string name="pasaporte_letra">PASS</string>
+    <string name="dimex_letra">CE</string>
+
+    <!-- TODO: MSJ Toast-->
+    <string name="error_conexion">Error de conexión: </string>
+    <string name="error_conexion_sb">Error de conexión con el servicio web base.</string>
+    <string name="error_conexion_sb_nativo">Error de conexión con el servicio web nativo.</string>
+    <string name="usuario_pass_invalido">Usuario y/o contreseña inválido.</string>
+    <string name="error_act_caja">Error en la actualización de caja</string>
+    <string name="error_act_caja_msj">Error en la lectura de los siguientes parametros: %1$s. Por favor comuníquese inmediatamente con el administrador.</string>
+    <string name="error_lect_caja_msj">Error en la lectura de los parametros con los tipo de usuarios. Por favor comuníquese inmediatamente con el administrador.</string>
+    <string name="error_config_caja_fecha">Error en la configuración de caja, debes actualizar la fecha y hora del dispositivo</string>
+    <string name="error_fecha">Debes actualizar la fecha y hora del dispositivo, después ve al menú presionar: Actualizar Caja</string>
+    <string name="caja_desactualizada">Caja desactualizada, ve al menú presionar: Actualizar Caja</string>
+    <string name="error_conexion_doc_finalizado">Error de conexión, la venta fue finalizada, vuelve a intentarlo:</string>
+    <string name="error_conexion_sb_doc_finalizado">Error de conexión con el servicio web base, la venta fue finalizada, vuelve a intentarlo:</string>
+
+    <!-- TODO: MainActivity-->
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="usuario_no_tienda">Usuario no asignado a la tienda: %1$s</string>
+    <string name="config_caja_msj">Debes configurar una caja para el dispositivo.</string>
+    <string name="tipo_usuario_invalido">Tipo de usuario inválido.</string>
+    <string name="caja_n_cerrada">La caja %1$s esta cerrada</string>
+    <string name="config_url">Configurar URL</string>
+    <string name="logo_crystal">Logo de Crystal S.A.S</string>
+    <string name="no_internet">No hay conexión a la red.</string>
+    <string name="alertaPermisosMemoriaInterna">Para el buen funcionamiento de la aplicación Pos Mobile - Bazar debes conceder los permisos</string>
+
+    <!-- TODO: ConfigActivity-->
+    <string name="asignar_tienda">Asignar Tienda</string>
+    <string name="asignar_caja">Asignar Caja</string>
+    <string name="msj_permisos">Debes conceder todos los permisos para garantizar el buen funcionamiento del Pos Mobile</string>
+    <string name="sin_caja">Sin Caja</string>
+
+    <!-- TODO: ClienteConsultaActivity-->
+    <string name="autoregistro_cliente">No está permitido el autoregistro</string>
+    <string name="no_cliente">Cliente no encontrado</string>
+    <string name="no_docuemnto_no_habeas">Documento no encontrado, esta caja no esta autorizada para registrar nuevos clientes.</string>
+    <string name="ident_req_cliente">Número identificación requerido</string>
+    <string name="nCaja">N. Caja</string>
+    <string name="consultar">Consultar</string>
+    <string name="identificacion_cliente">Identificación del cliente</string>
+    <string name="cliente_generico">Cliente genérico</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="apertura_caja_fecha_no">Atención la fecha de apertura %1$s de la caja %2$s no corresponde con la fecha del sistema %3$s.</string>
+    <string name="cerrar_sesion_confirmar">¿Estas seguro de cerrar la sesión?</string>
+    <string name="_cliente">CLIENTE</string>
+    <string name="_generico">GENÉRICO</string>
+    <string name="actualizar_caja">Actualizar Caja</string>
+    <string name="caja_actualizada">Caja Actualizada</string>
+    <string name="error_responseparametroscaja">Error ResponseParametrosCaja: Respuesta Invalida, revisa el archivo parametros/parametroscaja.json de las apis intermedias</string>
+    <string name="carga_bono_regalo">Carga de Bono Regalo</string>
+    <string name="crear_cliente">Crear nuevo cliente</string>
+    <string name="crear_cliente_confirmar">Confirma que la identificación del cliente es: </string>
+    <string name="_cliente_generico">CLIENTE GENÉRICO</string>
+    <string name="error_conexion_consultar_cliente">Error de conexión al servicio web nativo de consultar cliente, contacte inmediatamente a un administrador.</string>
+    <string name="eanes_invalidos">Eanes para bazar inválidos</string>
+    <string name="consultar_cliente">Consultar Cliente</string>
+    <string name="titulo_test_comunicacion_tef">Prueba de comunicación</string>
+    <string name="modo_autonomo">Modo Autónomo</string>
+    <string name="gestion_modo_autonomo">Gestión Modo Autónomo</string>
+    <string name="realizar_cierre_apertura">Realizar Cierre/Apertura</string>
+
+    <!-- TODO: MediosPagosActivity-->
+    <string name="no_medios_pago_caja">No hay medios de pago disponibles para esta caja</string>
+    <string name="no_importe_neto_pago">No puedes realizar más importes, el neto por pagar ha sido cancelado</string>
+    <string name="medio_efectivo_no">El Medio de Pago EFECTIVO no se puede usar para esta compra</string>
+    <string name="error_crear_doc">Error al crear el Documento</string>
+    <string name="error_conexion_crear_doc">Error de conexión al servicio web nativo de crear documento, contacte inmediatamente a un administrador.</string>
+    <string name="error_conexion_suspender_doc">Error de conexión al servicio web nativo de suspender documento, contacte inmediatamente a un administrador.</string>
+    <string name="error_conexion_consultar_doc">Error de conexión al servicio web nativo de consultar documento, contacte inmediatamente a un administrador.</string>
+    <string name="importe_realizados_salir">¿Estás seguro de salir de medios de pagos con importes realizados?</string>
+    <string name="cierre_medios_pago">Cierre de Medios de Pagos</string>
+    <string name="tef_online">TEF Online</string>
+    <string name="tef_contingencia">TEF Contingencia</string>
+    <string name="tef_cont">TEF Cont.</string>
+    <string name="otros_medios">Otros Medios</string>
+    <string name="pagar_efectivo">Pagar en efectivo</string>
+    <string name="pagar_tef">Pagar mediante TEF</string>
+    <string name="pagar_otros">Pagar con otros medios</string>
+    <string name="neto_pagar_medios">Neto por Pagar:</string>
+    <string name="importe_ingresado_medios">Importe Ingresado:</string>
+    <string name="pendiente_pagar_medios">Pendiente por Pagar:</string>
+    <string name="cambio_medios">Cambio:</string>
+    <string name="no_user_id_mp">la caja no tiene asignado el User Id de MercadoPago.</string>
+    <string name="no_token_mp">la caja no tiene asignado el Token de MercadoPago.</string>
+    <string name="debes_finalizar_pedido">Debes finalizar la compra, de lo contrario contacta un administrador inmediatamente, La compra ya se facturo, solo falta realizar el pedido a E-commerce.</string>
+    <string name="error_cupo_empleado">No se puede finalizar la venta, el cupo del empleado es de %1$s… se supero el cupo con %2$s</string>
+
+    <!-- TODO: Lector de codigo de barras-->
+    <string name="linterna_encendida">Linterna encendida</string>
+    <string name="linterna_apagada">Linterna apagada</string>
+    <string name="msj_scan_barcode">Coloque un código de barras dentro del rectángulo del visor para escanearlo.</string>
+
+    <!-- TODO: Impresora-->
+    <string name="no_printers_found">No se encontraron impresoras</string>
+    <string name="none_paired">No hay dispositivos sincronizados</string>
+    <string name="config_impresora">Configurar Impresora</string>
+    <string name="re_imprimir">Re-Imprimir</string>
+    <string name="imprimision_realizada">Impresión Realizada</string>
+    <string name="error_desconectada">Error! Desconectada</string>
+    <string name="puerto_invalido">Puerto Inválido</string>
+    <string name="no_conectado">No conectado</string>
+    <string name="imprimiendo___">Imprimiendo...</string>
+    <string name="impresion">Impresión</string>
+    <string name="conectado___">Conectado...</string>
+    <string name="pulse_impresion">Pulse el boton de la impresión</string>
+    <string name="error_impresion_intentar">Error en la impresión, vuelva a intentar</string>
+    <string name="revise_ip_puerto">Revise la ip y el puerto ingresado, así su conexión a internet.</string>
+    <string name="rivise_dispositivo_bluetooth">Revise la conexión al dispositivo, así como si el bluetooth esta encendido.</string>
+    <string name="imprimir_dcto_control">Debes imprimir el documento de soporte de control.</string>
+    <string name="introducir_puerto_ip">Debes introducir la Ip y Puerto</string>
+    <string name="proceso_curso">Por favor Espere, hay un proceso en curso</string>
+    <string name="selec_impresora">Debes selecionar una impresora</string>
+    <string name="ip_dns">IP/DNS</string>
+    <string name="direccion_ip">Dirección IP:</string>
+    <string name="direccion_mac">Dirección MAC:</string>
+    <string name="puerto_">Puerto:</string>
+    <string name="cert_regalo">Cert Regalo</string>
+    <string name="dto_control">Dto Control</string>
+    <string name="det_devolucion">Det. Devolución</string>
+    <string name="ip_ejemplo_impresion">10.40.60.80</string>
+    <string name="puerto9100">9100</string>
+    <string name="mac_ejemplo_impresion">00:00:00:00:00:00</string>
+    <string name="baucher">baucher</string>
+    <string name="bluetooth_apagado">Bluetooth Apagado</string>
+    <string name="activat_bluetooth_impr">Debes activar el bluetooth para poder realizar la impresión.</string>
+    <string name="bluetooth_error_adapter">Error al leer bluetooth adapter</string>
+    <string name="habilitar_config_impresion">Habilitar configuración de impresión</string>
+    <string name="cupo_empleado">Cupo empleado</string>
+    <string name="comprobante_anulacion_tef">Comprobante de anulación TEF</string>
+    <string name="comprobante_bono_regalo_tef">Comprobante de bono regalo TEF</string>
+    <string name="comprobante_compra_tef">Comprobante de compra TEF</string>
+    <string name="politica_privacidad_datos">Política de privacidad de datos</string>
+    <string name="cierre_totales">Cierre de totales</string>
+    <string name="cierre_detallado">Cierre detallado</string>
+    <string name="tef_cont_cierre_detallado">TEF CONT: Cierre detallado</string>
+    <string name="imprimir_det_descuento">Debes imprimir los detalles de descuentos.</string>
+    <string name="comprobante_mercado_pago">Comprobante de Mercado Pago</string>
+    <string name="auto_re_imprimir">Ingrese el código para autorizar la Re-Impresion de la factura.</string>
+
+    <!-- TODO: Datafono-->
+    <string name="datafono">Datafono</string>
+    <string name="reiniciar_datafono">Reiniciar Datafono</string>
+    <string name="use_direct_connect">Conexión directa (IP)</string>
+    <string name="str_connected">Datafono conectado!</string>
+    <string name="str_not_connected">Datafono Desconectado</string>
+    <string name="error_transaction">Error en la transaccion</string>
+    <string name="ok_transaction">Transaccion realizada</string>
+    <string name="importe_no_0">El Importe no puede ser 0</string>
+    <string name="importe_invalido">Importe Inválido</string>
+    <string name="importe_no_mayor_deuda">El Importe no puede ser mayor a la deuda</string>
+    <string name="sin_transacciones_recibir">Sin transacciones para recibir</string>
+    <string name="cierre_datafono_finalizado">Cierre de Datafono Finalizado</string>
+    <string name="numero_recibo_invalido">Número de recibo inválido</string>
+    <string name="numero_recibo_0">El número de recibo no puede ser igual 0</string>
+    <string name="select_terminal">Seleccione un terminal:</string>
+    <string name="iniciar_cierre">Iniciar Cierre</string>
+    <string name="impr_detallado">Impr. Detallado</string>
+    <string name="impr_totales">Impr. Totales</string>
+    <string name="numero_recibo">Número Recibo</string>
+    <string name="anulacion_realizada_datafono">Anulación de Transacción TEF Realizada</string>
+    <string name="trans_aprobada">Transacción Aprobada</string>
+    <string name="trans_fallida">Transacción Fallida</string>
+    <string name="print_ultima_datafono">La última transacción fallida</string>
+    <string name="trans_sin_respuesta">Transacción sin respuesta</string>
+    <string name="test_comunicacion">Test de comunicación</string>
+
+    <!-- TODO: Caja -->
+    <string name="vendedor_caja">Vendedor:</string>
+    <string name="cliente_caja">Cliente:</string>
+    <string name="cambiar_vendedor_caja">Cambiar vendedor para la compra</string>
+    <string name="no_exentos_igual_0">No puede finalizar una venta con productos exentos de IVA con precio final igual a 0.</string>
+    <string name="producto_no_encontrado">Producto no encontrado</string>
+    <string name="error_conexion_condiciones">Error de conexion al servicio web nativo de condiones comerciales, contacte inmediatamente a un administrador.</string>
+    <string name="cliente_no_descuento">El cliente no posee ningún descuento</string>
+    <string name="serial_n_registrado">El número %1$s ya esta registrado</string>
+    <string name="conectando___">Conectando...</string>
+    <string name="conectado">Conectado</string>
+    <string name="lectura_invalida_rfid">Lectura Inválida, Acerque el producto.</string>
+    <string name="buscar_producto_ean_rfid">Buscar producto por el código de barras</string>
+    <string name="buscar_ean_rfid">¿Estás seguro que quieres buscar el producto por el código de barras ignorando la lectura RFID? Recuerde que necesitara permisos de administrador para insertar el producto.</string>
+    <string name="auto_producto_sintagrfid">Un administrador debe autorizar la inserción de un producto mediante lectura del código de barras</string>
+    <string name="rango_rfid_inva">Rango de serial RFID inválido, contacte inmediatamente a un administrador</string>
+    <string name="cambiar_vendedor">Seleccionar vendedor</string>
+    <string name="consultar_cupo_empleado">Consultar cupo empleado</string>
+    <string name="ingresar_donaciones_unicef">Ingresar donación UNICEF</string>
+    <string name="articulos_caja">Artículos:</string>
+    <string name="ean_invalido">EAN inválido</string>
+    <string name="consulta_invalida">Consulta inválida</string>
+    <string name="operacion_temp_no">Operación temporalmente inactiva</string>
+    <string name="hint_cantidad_articulo">Cantidad-Artículo</string>
+    <string name="ud">Ud</string>
+    <string name="descripcion">Descripción</string>
+    <string name="total">Total</string>
+    <string name="cierre_caja">Cierre de Caja</string>
+    <string name="productos_realizados_salir">¿Estás seguro de salir de la caja con productos en proceso?</string>
+    <string name="escaneo_cancelado">Escaneo Cancelado</string>
+    <string name="precio">Precio</string>
+    <string name="suspension_documento">Suspensión de documento</string>
+    <string name="suspension_invalida">Suspensión inválida</string>
+    <string name="estas_seguro_suspension_documento">Introduce una descripción para realizar la suspensión:</string>
+    <string name="suspension_exitosa">Suspensión exitosa</string>
+
+    <!-- TODO: CajaTiendaSelectDialogFragment -->
+    <string name="selecciona_n_dispositivo">Selecciona la %1$s para este dispositivo</string>
+    <string name="buscador_n_dispositivo">Buscar %1$s</string>
+
+    <!-- TODO: CambiarUrlDialogFragment-->
+    <string name="titleUrlDialogFragment">Cambiar URL Base</string>
+    <string name="msjUrlDialogFragment">Introduzca la nueva url de los servicios</string>
+    <string name="url_invalida">URL Inválida</string>
+
+    <!-- TODO: ImporteGripDialogFragment-->
+    <string name="desc_importe">Descripción del importe.</string>
+    <string name="quieres_eliminar_importe">Presiona confirmar para eliminar el importe.</string>
+    <string name="codigo_importe">Código:</string>
+    <string name="monto_importe">Monto:</string>
+    <string name="moneda_importe">Moneda:</string>
+
+    <!-- TODO: MedioPagoSelecDialogFragment-->
+    <string name="select_medio_pago">Seleccione un Medio de Pago</string>
+    <string name="medio_pago_no_usar">El Medio de Pago %1$s no se puede usar para esta compra</string>
+
+    <!-- TODO: PagoEfectivoDialogFragment-->
+    <string name="ingrese_cantidad_efectivo">Ingrese la cantidad de efectivo recibida</string>
+    <string name="importe_invalido_devolucion">Importe Inválido, el importe no puede ser mayor a la devolución</string>
+
+    <!-- TODO: PagoTEFContingenciaDialogFragment-->
+    <string name="seleccione_tipo_tarjeta">Seleccione el tipo de tarjeta e introduce el importe realizado:</string>
+    <string name="seleccione_1_tarjeta">Seleccione una tarjeta</string>
+    <string name="importe_igual_menor_cero">El importe debe ser igual o menor a la deuda:</string>
+
+    <!-- TODO: PagoTipoBonoDialogFragment-->
+    <string name="ingrese_importe">Ingrese un importe.</string>
+
+    <!-- TODO: PalabrasClavesDialogFragment-->
+    <string name="indroduce_palabras_claves">Introduce las palabras claves para los descuentos</string>
+    <string name="ingrese_palabra_clave">Ingrese una palabra clave</string>
+    <string name="escribe_palabra_clave">Escribe una palabra clave</string>
+
+    <!-- TODO: ProductoGripDialogFragment-->
+    <string name="cantidad_">Cantidad:</string>
+    <string name="no_registraron_cambios_productos">No se registraron cambios en el producto</string>
+    <string name="cambios_articulo">Puedes eliminar o cambiar la cantidad del producto</string>
+
+    <!-- TODO: DeviceBluetoothSelectDialogFragment-->
+    <string name="select_impresora_blue">Seleccione la impresora bluetooth a utilizar</string>
+    <string name="dispositivo_bluetooth">Dispositivos Bluetooth</string>
+
+    <!-- TODO: Autorizar DialogFragment -->
+    <string name="auto_devolucion_producto">Un administrador debe autorizar la devolución para el producto</string>
+    <string name="select_motivo_devolucion">Seleccione el motivo de la devolución</string>
+    <string name="select_vendedor_devolucion">Seleccione el vendedor del porducto a devolver</string>
+    <string name="no_motivo_devolucion">No existen motivos de devolución, contacte a los administradores</string>
+
+    <!-- TODO: DeviceBluetoothSelectDialogFragment-->
+    <string name="bonos">Bonos</string>
+    <string name="select_1bono">Selecione un bono</string>
+
+    <!-- TODO: ClienteDetalleActivity-->
+    <string name="actualizar_cliente">Actualizar Cliente</string>
+    <string name="cliente_nuevo">Cliente Nuevo</string>
+    <string name="nombres_requerido">Nombres requerido</string>
+    <string name="direccion_requerida">Dirección requerida</string>
+    <string name="departamento_requerida">Departamento requerido</string>
+    <string name="ciudad_requerida">Ciudad requerida</string>
+    <string name="apellidos_requerido">Apellidos requerido</string>
+    <string name="cedula_ciudadania">Cedula cuidadania</string>
+    <string name="nit">NIT</string>
+    <string name="pasaporte">Pasaporte</string>
+    <string name="cedula_identidad_cr">Cedula Identidad Costa Rica</string>
+    <string name="cedula_juridica">Cedula Juridica</string>
+    <string name="dimex">DIMEX</string>
+    <string name="nite">NITE</string>
+    <string name="extranjero">Extranjero</string>
+    <string name="correo_invalido">Correo electrónico inválido</string>
+    <string name="celular_invalido">Celular inválido</string>
+    <string name="no_doc">No. Doc:</string>
+    <string name="nombres_">Nombres:</string>
+    <string name="apellidos_">Apellidos:</string>
+    <string name="genero_">Género:</string>
+    <string name="fechaN_">Fecha de cumpleaños:</string>
+    <string name="correo_electronico_">Correo electrónico:</string>
+    <string name="celular_">Celular:</string>
+    <string name="ano1900">1900</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="registremos_datos">Acepta que registremos sus datos?</string>
+    <string name="preguntar_despues">Preguntar Después</string>
+    <string name="nombre_invalido">Nombre inválido</string>
+    <string name="apellido_invalido">Apellido inválido</string>
+    <string name="numero_identificacion_invalido">Número identificación inválido</string>
+    <string name="cliente_mayor_15">El cliente debe tener mas de 15 años</string>
+    <string name="fecha_cumple_invalida">Fecha de cumpleaños inválida</string>
+    <string name="cliente_registrado">Número y tipo de documento registrado.</string>
+    <string name="cliente_nuevo_misma_identificacion">Cliente nuevo con esta identificación</string>
+    <string name="direccion1_">Dirección 1:</string>
+    <string name="direccion2_">Dirección 2:</string>
+    <string name="departamento_">Departamento:</string>
+    <string name="ciudad_">Ciudad:</string>
+
+    <!-- TODO: DetallesDescuentosActivity-->
+    <string name="valor_final_">Valor Final:</string>
+
+    <!-- TODO: AdjuntarLog-->
+    <string name="no_directorio">No se pudo crear el directorio</string>
+    <string name="log_no_creado">No se pudo crear el log</string>
+    <string name="log_no_escrito">No se pudo realizar la escritura en el log</string>
+
+    <!-- TODO: MercadoPago-->
+    <string name="mostrar_qr">Mostrar QR</string>
+    <string name="error_servicio_mercado_pago">Error de conexión con los Servicios Web de Mercado Pago</string>
+    <string name="solicitar_pago">Solicitar Pago</string>
+    <string name="verificar_pago">Verificar Pago</string>
+    <string name="pago_no_aprobado">PAGO NO APROBADO</string>
+
+    <!-- TODO: Sodexo-->
+    <string name="codigo_bono">Código del bono</string>
+    <string name="codigo_bono_invalido">Código del bono inválido</string>
+    <string name="bono_no_venta">Producto no autorizado para el punto de venta.</string>
+    <string name="total_importe_">Total Importe:</string>
+    <string name="valor_bono_mayor_dueda">El valor del bono es mayor a la deuda. El importe es inválido.</string>
+    <string name="eliminar_bono_sodexo">Eliminar Bono Sodexo</string>
+    <string name="confimar_eliminacion_bono_sodexo">Presiona confirma para eliminar el bono sodexo: </string>
+
+    <!-- TODO: ProductoPrecioCeroDialogFragment-->
+    <string name="inroduce_precio">Introduce el precio para el artículo</string>
+    <string name="precio_invalido">Precio inválido</string>
+
+    <!-- TODO: DescuentoTipoClienteDialogFragment-->
+    <string name="select_cliente_compra">Seleccione un cliente para la compra:</string>
+
+    <!-- TODO: ProductoSelect-->
+    <string name="select_producto">Seleccione un producto</string>
+
+    <!-- TODO: Impresion Sunmi-->
+    <string name="iniciando__">Iniciando...</string>
+    <string name="resumen">Resumen</string>
+    <string name="terminado">Terminado</string>
+
+    <!-- TODO: TEFContingencia Activity-->
+    <string name="realizar_cierre">Realizar cierre</string>
+
+    <!-- TODO: Modo Autonomo-->
+    <string name="modo_autonomo_activo">El modo autónomo esta activo.</string>
+    <string name="activa_modo_autonomo_confirmacion">¿Estás seguro de activar el modo autónomo?.</string>
+    <string name="modo_autonomo_desactivado">El modo autónomo desactivado satifactoriamente.</string>
+    <string name="activar_modo_autonomo">Activar modo autónomo</string>
+    <string name="desactivar_modo_autonomo">Desactivar modo autónomo</string>
+    <string name="crear_log_trx">Crear Log TRX</string>
+    <string name="confirme_realizar_cierre_apertura">Confirme que va realizar un cierre y apertura en modo autónomo, recuerde que al integrar debera realizarlo en el pos fijo.</string>
+    <string name="cierre_apertura_confirmar">Debes realizar un cierre y apertura en pos fijo, después presione continuar</string>
+
+    <!-- TODO: MotivoDevolucionDialogFragment-->
+    <string name="select_motivo_devolucion_producto">Seleccione el motivo de devolución para el producto:</string>
+
+    <!-- TODO: DevolucionConInformacionActivity-->
+    <string name="codigo_documento">Código del documento</string>
+    <string name="numero_documento_invalido">Número de documento inválido</string>
+    <string name="devolucion_invalida">Devolución inválida</string>
+    <string name="numero_documento_repetido">Número de documento repetido</string>
+
+    <!-- TODO: AutorizacionDF-->
+    <string name="codigo_autorizacion">Código de autorización</string>
+    <string name="ingrese_codigo_autorizacion_devolucion">Ingrese el código de autorización para la devolución</string>
+    <string name="autorizacion_invalida">Autorización inválida</string>
+    <string name="autorizacion_exitosa">Autorización exitosa</string>
+
+    <!-- TODO: RecuperarTransaccionesSuspendidasActivity-->
+    <string name="obtener_suspensiones">Recuperar Transacciones Suspendidas</string>
+    <string name="referencia_interna">Referencia Interna</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="transaccion_">Transacción:</string>
+    <string name="recuperar_trasaccion_suspendida_">Recuperar transacción suspendida:</string>
+
+    <!-- TODO: DocumentoImpresionActivity-->
+    <string name="titulo_impresion_documento">Impresión de transaciones</string>
+    <string name="re_imprimir_factura">Confirma la reimpresión de esta factura.</string>
+    <string name="title_activity_comprobante_t_e_f_imprimir">ComprobanteTEFImprimirActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

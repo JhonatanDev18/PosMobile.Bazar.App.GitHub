@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/progressbar_menu"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/vector_trespuntos"
+        android:id="@+id/MenuOpciones"
+        android:title="Más"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/mItemTEF"
+                android:icon="@mipmap/opciones_tef"
+                android:title="@string/tef" >
+                <menu app:showAsAction="always">
+                    <item
+                        android:id="@+id/mItemTEFContinguencia"
+                        android:icon="@mipmap/contingencia_tef"
+                        android:title="@string/tef_contingencia" />
+                    <item
+                        android:id="@+id/mItemTEFUltima"
+                        android:icon="@mipmap/ultima_transaciontef"
+                        android:title="@string/titulo_utltrans_datafono" />
+                    <item
+                        android:id="@+id/mItemReImpresionTEF"
+                        android:icon="@mipmap/prueba_impresion"
+                        android:title="@string/titulo_re_impresion_tef" />
+                    <item
+                        android:id="@+id/mItemTEFCierre"
+                        android:icon="@mipmap/cierre_tef"
+                        android:title="@string/titulo_cierre_datafono" />
+                    <item
+                        android:id="@+id/mItemTEFAnulacion"
+                        android:icon="@mipmap/anular_tef"
+                        android:title="@string/titulo_anular_datafono" />
+                    <item
+                        android:id="@+id/mItemTestComunicacionCaja"
+                        android:icon="@mipmap/comunicacion_tef"
+                        android:title="@string/titulo_test_comunicacion_tef" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/mItemModoAutonomo"
+                android:icon="@mipmap/ic_modo_autonomo"
+                android:title="@string/modo_autonomo" >
+                <menu>
+                    <item
+                        android:id="@+id/mItemGestionMA"
+                        android:icon="@mipmap/ic_gestion_modoautonomo"
+                        android:title="@string/gestion_modo_autonomo" />
+                    <item
+                        android:id="@+id/mItemAperturaCierreMA"
+                        android:icon="@mipmap/cierre_apertura"
+                        android:title="@string/realizar_cierre_apertura" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/mItemConsultarCliente"
+                android:icon="@mipmap/consultar_usuario"
+                android:title="@string/consultar_cliente" />
+            <item
+                android:id="@+id/mItemActualizarCaja"
+                android:icon="@mipmap/actualizar_caja"
+                android:title="@string/actualizar_caja" />
+            <item
+                android:id="@+id/mItemObtenerSuspenciones"
+                android:icon="@mipmap/recuperar_transaccion"
+                android:title="@string/obtener_suspensiones" />
+            <item
+                android:id="@+id/mItemReimpresion"
+                android:icon="@mipmap/prueba_impresion"
+                android:title="@string/titulo_impresion_documento" />
+            <item
+                android:id="@+id/mItemCerrarSesion"
+                android:icon="@mipmap/cerrar_sesion"
+                android:title="@string/cerrar_sesion" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clLoginA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.crystal.bazarposmobile.ui.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50HLoginA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvTituloLoginA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogoCrystalLoginA"
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/logo_crystal"
+        app:layout_constraintBottom_toTopOf="@+id/tliUsuarioLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloLoginA"
+        app:srcCompat="@drawable/crystal" />
+
+    <ImageView
+        android:id="@+id/ivLecturaCamaraUsuarioLoginA"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tliUsuarioLogin"
+        app:layout_constraintEnd_toStartOf="@+id/tliUsuarioLogin"
+        app:layout_constraintTop_toTopOf="@+id/tliUsuarioLogin"
+        app:srcCompat="@drawable/camara" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliUsuarioLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline50HLoginA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_usuario"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etUsuarioLoginA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="0"
+            android:ems="10"
+            android:hint="@string/usuario"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/ivLecturaCamaraPassLoginA"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tliContrasenaLogin"
+        app:layout_constraintEnd_toStartOf="@+id/tliContrasenaLogin"
+        app:layout_constraintTop_toTopOf="@+id/tliContrasenaLogin"
+        app:srcCompat="@drawable/camara" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliContrasenaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline50HLoginA"
+        app:startIconDrawable="@drawable/candado_login"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etPassLoginA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="0"
+            android:ems="10"
+            android:hint="@string/contrasena"
+            android:imeOptions="actionSearch"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnIniciarSesionLoginA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/iniciar_sesion"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliContrasenaLogin" />
+
+    <ProgressBar
+        android:id="@+id/pbLoginA"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesionLoginA" />
+
+    <TextView
+        android:id="@+id/tvVersionLoginA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/version_apk"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvModoAutonomoLoginA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/modo_autonomo"
+        android:textAlignment="center"
+        android:textColor="@color/colorModoAutonomo"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

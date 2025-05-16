@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clDIA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DocumentoImpresionActivity">
+
+    <EditText
+        android:id="@+id/etReferenciaInternaDIA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:focusable="true"
+        android:imeOptions="actionSearch"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReferenciaInternaDIA"
+        app:layout_constraintEnd_toStartOf="@+id/ivReferenciaInternaDIA"
+        app:layout_constraintStart_toEndOf="@+id/tvReferenciaInternaDIA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvReferenciaInternaDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Referencia\nInterna:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivReferenciaInternaDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReferenciaInternaDIA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvReferenciaInternaDIA"
+        app:srcCompat="@drawable/buscar_oscuro_40dp" />
+
+    <TextView
+        android:id="@+id/tvFechaDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Fecha\nDocumento:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReferenciaInternaDIA" />
+
+    <EditText
+        android:id="@+id/etFechaDIA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFechaDIA"
+        app:layout_constraintEnd_toStartOf="@+id/ivFechaDIA"
+        app:layout_constraintStart_toEndOf="@+id/tvReferenciaInternaDIA"
+        app:layout_constraintTop_toTopOf="@+id/tvFechaDIA" />
+
+    <ImageView
+        android:id="@+id/ivFechaDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFechaDIA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvFechaDIA"
+        app:srcCompat="@drawable/buscar_oscuro_40dp" />
+
+    <TextView
+        android:id="@+id/tvMostrarMasDIA"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:text="Mostrar más..."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaDIA" />
+
+    <TextView
+        android:id="@+id/tvRefrenciaInternaDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/referencia_interna"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMasDIA" />
+
+    <TextView
+        android:id="@+id/tvCantidadDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/cantidad"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMasDIA" />
+
+    <TextView
+        android:id="@+id/tvPrecioDIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/precio"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMasDIA" />
+
+    <fragment
+        android:id="@+id/fragmentDIA"
+        android:name="com.crystal.bazarposmobile.ui.fragment.DocumentoDetalleGripFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefrenciaInternaDIA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

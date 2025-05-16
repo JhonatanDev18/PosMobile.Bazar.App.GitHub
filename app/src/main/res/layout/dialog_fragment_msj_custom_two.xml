@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clClienteConsulta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.posmovil.ui.dialogfragmen.MsjCustomDosAccionesDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMsjCustomTwo"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/usuario_consulta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseCustomTwo" />
+
+    <TextView
+        android:id="@+id/tvTituloMsjCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/sin_registro"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMsjCustomTwo" />
+
+    <TextView
+        android:id="@+id/tvTextoMsjCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/sin_registro"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloMsjCustomTwo" />
+
+    <Button
+        android:id="@+id/btnPositivoTwo"
+        style="@style/fuente"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:text="@string/si"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCuadrante4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoMsjCustomTwo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCuadrante4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnNegativoTwo"
+        style="@style/fuente"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:elevation="4dp"
+        android:text="@string/no"
+        android:textAllCaps="false"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCuadrante4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoMsjCustomTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

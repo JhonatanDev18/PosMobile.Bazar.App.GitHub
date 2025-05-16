@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clCajaA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="stateAlwaysHidden"
+    tools:context="com.crystal.bazarposmobile.ui.CajaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCajaA"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVendedorTituloCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/vendedor_caja"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVendedorCajaA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVendedorTituloCajaA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvVendedorTituloCajaA"
+        app:layout_constraintTop_toTopOf="@+id/tvVendedorTituloCajaA" />
+
+    <EditText
+        android:id="@+id/etCantArticuloCajaA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="4dp"
+        android:digits="0123456789-"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/hint_cantidad_articulo"
+        android:imeOptions="actionSearch"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/ivBuscarCajaA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCajaA" />
+
+    <ImageView
+        android:id="@+id/ivBuscarCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/etCantArticuloCajaA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buscar_oscuro_40dp" />
+
+    <TextView
+        android:id="@+id/tvGripCantidadCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/ud"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCantArticuloCajaA" />
+
+    <TextView
+        android:id="@+id/tvGripDescripcionCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/descripcion"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGripCantidadCajaA"
+        app:layout_constraintStart_toEndOf="@+id/tvGripCantidadCajaA"
+        app:layout_constraintTop_toTopOf="@+id/tvGripCantidadCajaA" />
+
+    <TextView
+        android:id="@+id/tvGripPrecioCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/precio"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGripDescripcionCajaA"
+        app:layout_constraintEnd_toStartOf="@+id/tvGripTotalCajaA"
+        app:layout_constraintTop_toTopOf="@+id/tvGripDescripcionCajaA" />
+
+    <TextView
+        android:id="@+id/tvGripTotalCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/total"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGripDescripcionCajaA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvGripDescripcionCajaA" />
+
+    <fragment
+        android:id="@+id/fragmentGridCajaA"
+        android:name="com.crystal.bazarposmobile.ui.fragment.ProductoGripFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalTituloCajaA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGripCantidadCajaA" />
+
+    <TextView
+        android:id="@+id/tvArticulosTituloCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/articulos_caja"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalTituloCajaA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalTituloCajaA" />
+
+    <TextView
+        android:id="@+id/tvArticulosCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/cero_0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvArticulosTituloCajaA"
+        app:layout_constraintStart_toEndOf="@+id/tvArticulosTituloCajaA"
+        app:layout_constraintTop_toTopOf="@+id/tvArticulosTituloCajaA" />
+
+    <TextView
+        android:id="@+id/tvTotalTituloCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/total_"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnMediosPagosCajaA"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotalCajaA" />
+
+    <TextView
+        android:id="@+id/tvTotalCajaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cero_0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalTituloCajaA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalTituloCajaA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMediosPagosCajaA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="2dp"
+        android:drawableRight="@android:drawable/ic_menu_directions"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/titulo_medios_pagos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbCajaA"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMediosPagosCajaA" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

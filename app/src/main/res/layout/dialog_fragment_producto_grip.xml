@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clPGDF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.bazarposmobile.ui.dialogfragmen.ProductoGripDialogFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33PGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline66PGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <EditText
+        android:id="@+id/etCantidadPGDF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/cero_0"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline66PGDF"
+        app:layout_constraintStart_toStartOf="@+id/guideline33PGDF"
+        app:layout_constraintTop_toBottomOf="@+id/ivEliminarPGDF" />
+
+    <ImageView
+        android:id="@+id/ivEliminarPGDF"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/eliminar_datos60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAddPGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/add_50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etCantidadPGDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline66PGDF"
+        app:layout_constraintTop_toTopOf="@+id/etCantidadPGDF" />
+
+    <ImageView
+        android:id="@+id/ivRemovePGDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/remove_50dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline33PGDF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCantidadPGDF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

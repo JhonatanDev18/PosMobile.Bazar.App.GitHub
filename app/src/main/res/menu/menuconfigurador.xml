@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/vector_trespuntos"
+        android:id="@+id/MenuOpciones"
+        android:title="Más"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/mItemTestComunicacionConf"
+                android:icon="@mipmap/comunicacion_tef"
+                android:title="@string/titulo_test_comunicacion_datafono" />
+            <item
+                android:id="@+id/mItemImpresionPruebaConf"
+                android:icon="@mipmap/prueba_impresion"
+                android:title="@string/titulo_impresion_prueba" />
+        </menu>
+    </item>
+</menu>

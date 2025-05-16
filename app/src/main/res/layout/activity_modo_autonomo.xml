@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMAA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ModoAutonomoActivity">
+
+    <Button
+        android:id="@+id/btnModoAutonomoMAA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:drawableRight="@drawable/ic_baseline_portable_wifi_off_40"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/modo_autonomo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFechaGripMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Fecha"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModoAutonomoMAA" />
+
+    <TextView
+        android:id="@+id/tvRefereciaIinternaGripMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="4dp"
+        android:text="Referencia Interna"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModoAutonomoMAA" />
+
+    <TextView
+        android:id="@+id/tvTotalGripMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="53dp"
+        android:text="@string/total"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModoAutonomoMAA" />
+
+    <TextView
+        android:id="@+id/tvCantidadGripMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Cant."
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModoAutonomoMAA" />
+
+    <fragment
+        android:id="@+id/fragmentMAA"
+        android:name="com.crystal.bazarposmobile.ui.fragment.DocHeaderFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalTituloMAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaGripMAA" />
+
+    <TextView
+        android:id="@+id/tvTotalMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/cero_0"
+        app:layout_constraintBottom_toTopOf="@+id/btnSincronizarMAA"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalTituloMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/total_"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalMAA"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotalMAA"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalMAA" />
+
+    <Button
+        android:id="@+id/btnSincronizarMAA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableRight="@drawable/ic_baseline_online_prediction_40"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="Sincronizar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbMAA"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

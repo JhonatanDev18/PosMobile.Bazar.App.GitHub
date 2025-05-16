@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMediosPagos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.crystal.bazarposmobile.ui.MediosPagosActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMedios33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMedios50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMedios66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:id="@+id/ivEfectivoMP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/pagar_efectivo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pago_efectivo"/>
+
+    <TextView
+        android:id="@+id/tvEfectivoMP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/efectivo"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEfectivoMP" />
+
+    <ImageView
+        android:id="@+id/ivTEFonlineMP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/pagar_tef"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios50"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios33"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/datafono_desactivado" />
+
+    <TextView
+        android:id="@+id/tvTEFonlineMP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/tef_online"
+        android:textAlignment="center"
+        android:textColor="#BABABA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios50"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios33"
+        app:layout_constraintTop_toBottomOf="@+id/ivTEFonlineMP" />
+
+    <ImageView
+        android:id="@+id/ivTEFcontiguenciaMP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios66"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tef_cont_desactivado" />
+
+    <TextView
+        android:id="@+id/tvTEFcontiguenciaMP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/tef_cont"
+        android:textAlignment="center"
+        android:textColor="#BABABA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMedios66"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios50"
+        app:layout_constraintTop_toBottomOf="@+id/ivTEFcontiguenciaMP" />
+
+    <ImageView
+        android:id="@+id/ivOtrosMediosMP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/pagar_otros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios66"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_hamburguesa_desactivado" />
+
+    <TextView
+        android:id="@+id/tvOtrosMediosMP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/otros_medios"
+        android:textAlignment="center"
+        android:textColor="#BABABA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMedios66"
+        app:layout_constraintTop_toBottomOf="@+id/ivOtrosMediosMP" />
+
+    <fragment
+        android:id="@+id/fragmentGripImportes"
+        android:name="com.crystal.bazarposmobile.ui.fragment.ImporteGripFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCambioMP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOtrosMediosMP" />
+
+    <TextView
+        android:id="@+id/tvCambioMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/cambio_medios"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPedienteMP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCambioMontoMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/cero_0"
+        android:textColor="#303030"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCambioMP"
+        app:layout_constraintStart_toEndOf="@+id/tvCambioMP"
+        app:layout_constraintTop_toTopOf="@+id/tvCambioMP" />
+
+    <TextView
+        android:id="@+id/tvPedienteMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/pendiente_pagar_medios"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPrecioBaseProdGrip"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPedienteMontoMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/cero_0"
+        android:textColor="#8D8D8D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPedienteMP"
+        app:layout_constraintStart_toEndOf="@+id/tvPedienteMP"
+        app:layout_constraintTop_toTopOf="@+id/tvPedienteMP"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPrecioBaseProdGrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/importe_ingresado_medios"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvNetoPagarMP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvImporteIngresadoMontoMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/cero_0"
+        android:textColor="#8D8D8D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrecioBaseProdGrip"
+        app:layout_constraintStart_toEndOf="@+id/tvPrecioBaseProdGrip"
+        app:layout_constraintTop_toTopOf="@+id/tvPrecioBaseProdGrip"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvNetoPagarMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/neto_pagar_medios"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNetoPagarMontoMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="#8D8D8D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNetoPagarMP"
+        app:layout_constraintStart_toEndOf="@+id/tvNetoPagarMP"
+        app:layout_constraintTop_toTopOf="@+id/tvNetoPagarMP"
+        tools:text="@string/cero_0" />
+
+    <ProgressBar
+        android:id="@+id/pbMediosPagos"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminateDrawable="@drawable/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ibImprimirMP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/imprimir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/impresora_prueba" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

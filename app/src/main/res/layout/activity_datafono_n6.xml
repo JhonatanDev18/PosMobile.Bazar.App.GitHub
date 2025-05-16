@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clDatafonoA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crystal.bazarposmobile.ui.DatafonoActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50DatafonoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDatafonoA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloDatafonoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/datafono"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarDatafonoA"
+        app:layout_constraintEnd_toStartOf="@+id/pbDatafonoA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarDatafonoA" />
+
+    <ImageView
+        android:id="@+id/ivReiniciarDatafonoA"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/reiniciar_datafono"
+        android:src="@android:drawable/ic_menu_rotate"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarDatafonoA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbDatafonoA"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/ivReiniciarDatafonoA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelecioneTerminalDatafonoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/select_terminal"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDatafonoA" />
+
+    <ScrollView
+        android:id="@+id/svTerminalesDatafonoA"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelecioneTerminalDatafonoA">
+
+        <RadioGroup
+            android:id="@+id/rgTerminalDatafonoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioGroup>
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliUsuarioDatafono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/et_usuario_datafono"
+        android:visibility="gone"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelecioneTerminalDatafonoA"
+        app:startIconDrawable="@drawable/ic_usuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsuarioDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilUsuario" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliPassDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_pass_datafono"
+        android:textColorHint="@color/black"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintStart_toStartOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintTop_toBottomOf="@+id/tliUsuarioDatafono"
+        app:startIconDrawable="@drawable/candado_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilPassLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilPassLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCodigoDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        android:hint="@string/codigo_datafono"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliPassDatafono"
+        app:startIconDrawable="@drawable/datafono_confi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCodigoDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCodigoDatafono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCodigoDatafono" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCodigoUnicoDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        android:hint="@string/codigo_unico_datafono"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliCodigoDatafono"
+        app:startIconDrawable="@drawable/codigo_unico_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCodigoUnicoDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCodigoDatafono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCodigoDatafono" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include
+        android:id="@+id/includeDatafonoA"
+        layout="@layout/datafono_pago_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svTerminalesDatafonoA" />
+
+    <TextView
+        android:id="@+id/tvResultadoDatafonoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeDatafonoA" />
+
+    <TextView
+        android:id="@+id/tvEstatusDatafonoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline50DatafonoA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoDatafonoA" />
+
+    <TextView
+        android:id="@+id/tvDuracionDatafonoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEstatusDatafonoA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline50DatafonoA"
+        app:layout_constraintTop_toTopOf="@+id/tvEstatusDatafonoA" />
+
+    <ScrollView
+        android:id="@+id/svResultadosDatafonoA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvEstadoDatafono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEstatusDatafonoA"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvRespuestaDatafonoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvEstadoDatafono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvErrorConexionN6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_msj_error_conexion_n6"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/rojo"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/campana_roja"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobarPagoN6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnComprobarPagoN6"
+        style="@style/fuente"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:visibility="gone"
+        android:text="@string/comprobar_pago"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crystal.bazarposmobile">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <permission android:name="com.crystal.bazarposmobile.permission.BROADCAST_BARCODE"
+        android:protectionLevel="signature" />
+
+    <permission android:name="com.crystal.bazarposmobile.permission.BROADCAST_STATE_CHANGED"
+        android:protectionLevel="signature" />
+
+    <permission android:name="com.crystal.bazarposmobile.permission.BROADCAST_USB_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name=".common.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.ComprobanteTEFImprimirActivity"
+            android:label="@string/title_activity_comprobante_t_e_f_imprimir"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ui.DocumentoImpresionActivity" />
+        <activity android:name=".ui.RecuperarTransaccionesSuspendidasActivity" />
+        <activity
+            android:name=".ui.DevolucionConInformacionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.BancolombiaQrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LectorCodigosCamaraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ModoAutonomoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TEFContingenciaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImpresionSumniActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImpresionIminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImpresionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MediosPagosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CajaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ClienteConsultaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DatafonoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DatafonoN6Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.ingenico.pclservice.PclService" />
+        <service android:name="com.ingenico.pclservice.BluetoothService" />
+    </application>
+
+</manifest>

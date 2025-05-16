@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clImpA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.crystal.bazarposmobile.ui.ImpresionActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50ImpA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <RadioGroup
+        android:id="@+id/rgConexionImpA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbBluetoothImpA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/bluetooth"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rbIpDnsImpA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/ip_dns"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvIpAddressImpA"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:text="@string/direccion_ip"
+        android:textColor="#000"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPuertoIPImpA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etIpAddressImpA" />
+
+    <EditText
+        android:id="@+id/etIpAddressImpA"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/ip_ejemplo_impresion"
+        android:inputType="textNoSuggestions|text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvIpAddressImpA"
+        app:layout_constraintTop_toBottomOf="@+id/rgConexionImpA" />
+
+    <TextView
+        android:id="@+id/tvPuertoIPImpA"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:text="@string/puerto_"
+        android:textColor="#000"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/etMacAddressImpA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etPuertoIPImpA" />
+
+    <EditText
+        android:id="@+id/etPuertoIPImpA"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:focusable="true"
+        android:hint="@string/puerto9100"
+        android:inputType="textNoSuggestions|text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvPuertoIPImpA"
+        app:layout_constraintTop_toBottomOf="@+id/etIpAddressImpA" />
+
+    <TextView
+        android:id="@+id/tvMacAddressImpA"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:text="@string/direccion_mac"
+        android:textColor="#000"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etMacAddressImpA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etMacAddressImpA" />
+
+    <EditText
+        android:id="@+id/etMacAddressImpA"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/mac_ejemplo_impresion"
+        android:inputType="textNoSuggestions|text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMacAddressImpA"
+        app:layout_constraintTop_toBottomOf="@+id/etPuertoIPImpA" />
+
+    <Button
+        android:id="@+id/btnResumenImpA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/resumen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnImprimirImpA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline50ImpA" />
+
+    <Button
+        android:id="@+id/btnImprimirImpA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:text="@string/imprimir"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCerrarImpA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline50ImpA"
+        app:layout_constraintTop_toTopOf="@+id/btnCerrarImpA" />
+
+
+    <Button
+        android:id="@+id/btnCerrarImpA"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/cerrar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvEstatusImpA"
+        app:layout_constraintEnd_toStartOf="@+id/guideline50ImpA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvEstatusImpA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#CCF44336"
+        android:gravity="center_horizontal"
+        android:text="@string/config_impresora"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
